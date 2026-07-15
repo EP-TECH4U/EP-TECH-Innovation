@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EP TECH Innovation | Learn. Build. Grow.</title>
+<meta name="description" content="EP TECH Innovation is a growing community of 175+ tech learners sharing resources, scholarships, and real guidance for people serious about building a career in tech.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/favicon.png" type="image/x-icon" width="32px" height="32px">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="siteHeader">
+  <nav class="header__nav">
+    <a class="nav__logo" href="#home">
+      <span class="nav__logo-mark" aria-hidden="true">
+        <!-- <svg viewBox="0 0 32 32" width="30" height="30" fill="none">
+          <circle cx="16" cy="6" r="3.4" fill="currentColor"/>
+          <circle cx="6" cy="24" r="3.4" fill="currentColor"/>
+          <circle cx="26" cy="24" r="3.4" fill="currentColor"/>
+          <path d="M16 9.4L7.5 21.4M16 9.4l8.5 12M9 24h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg> -->
+        <img class="img__logo" src="images/eptech logo.jpg" alt="eptech logo" width="39px" >
+      </span>
+      <h2> EP TECH <span class="nav__logospan">Innovation</span></h2>
+    </a>
+
+    <div class="nav__links" id="navLinks">
+      <a href="#home" class="nav__link active" data-link>Home</a>
+      <a href="#about" class="nav__link" data-link>About</a>
+      <a href="#opportunities" class="nav__link" data-link>Opportunities</a>
+      <a href="#contact" class="nav__link" data-link>Contact</a>
+      <a href="https://whatsapp.com/channel/0029Vb7wtv5LdQeUi5zDGq3u" target="_blank" rel="noopener" class="nav__cta">
+        Join Us
+      </a>
+    </div>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- backdrop for mobile menu -->
+<div class="nav__backdrop" id="navBackdrop"></div>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <canvas id="networkCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+  <div class="hero__glow" aria-hidden="true"></div>
+
+  <div class="hero__body">
+    <p class="eyebrow reveal">A community-built network for tech learners</p>
+
+    <h1 class="hero__title reveal">
+      Learn. <span class="hero__titlespan">Build.</span> Grow.
+    </h1>
+
+    <p class="hero__subtitle reveal">
+      EP TECH Innovation is a growing community of
+      <span class="counter" data-target="175">0</span>+ tech learners sharing
+      resources, scholarships, and real guidance — for people serious about
+      building a career in tech.
+    </p>
+
+    <div class="hero__actions reveal">
+      <span class="hero__actions-label">Join the Community</span>
+      <div class="hero__buttons">
+        <a href="https://whatsapp.com/channel/0029Vb7wtv5LdQeUi5zDGq3u" target="_blank" rel="noopener" class="btn btn--whatsapp">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.1 9 9.6 7.8 9.4 7.3c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3s1 2.7 1.1 2.9c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 14.9 3.6 13.5 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8.2-8.4 8.2z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://discord.gg/gscFNUKcc" target="_blank" rel="noopener" class="btn btn--discord">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.3 4.4A19.7 19.7 0 0 0 15.7 3c-.2.4-.5.9-.7 1.3a18.3 18.3 0 0 0-5.9 0A9 9 0 0 0 8.4 3a19.6 19.6 0 0 0-4.6 1.4C1 9 .3 13.5.6 18a19.8 19.8 0 0 0 5.7 2.8c.5-.6.8-1.3 1.2-2a12.5 12.5 0 0 1-1.9-.9l.5-.4a14 14 0 0 0 11.9 0l.4.4c-.6.3-1.2.6-1.9.9.3.7.7 1.4 1.1 2A19.7 19.7 0 0 0 23.4 18c.4-5.3-1-9.7-3.1-13.6zM8.5 15.3c-1 0-1.9-1-1.9-2.1s.8-2.1 1.9-2.1 1.9 1 1.9 2.1-.9 2.1-1.9 2.1zm7 0c-1 0-1.9-1-1.9-2.1s.8-2.1 1.9-2.1 1.9 1 1.9 2.1-.8 2.1-1.9 2.1z"/></svg>
+          Discord
+        </a>
+      </div>
+    </div>
+
+    <button class="hero__scroll" id="scrollCue" aria-label="Scroll to About">
+      <span></span>
+    </button>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="about">
+  <div class="about__inner">
+    <p class="eyebrow reveal">Why we exist</p>
+    <h2 class="section-title reveal">About EP TECH Innovation</h2>
+
+    <div class="about__grid-copy">
+      <p class="about__lead reveal">
+        EP TECH Innovation started as a simple idea — that no one should have
+        to figure out tech alone. What began as a small WhatsApp group has
+        grown into a community of <strong>175+ members</strong> sharing
+        scholarships, learning resources, and honest guidance for anyone on
+        the path to becoming a developer, engineer, or tech professional.
+      </p>
+
+      <div class="about__founder reveal">
+        <div class="about__founder-avatar" aria-hidden="true">CS</div>
+        <p>
+          I'm <strong>Chukwuebuka Samuel</strong> (Ebuka) — founder and
+          community manager. I'm a Computer Science student building toward
+          full-stack development and AI, and I started this community because
+          I wanted the kind of support system I wish I'd had when I started.
+        </p>
+      </div>
+    </div>
+
+    <div class="about__grid" id="pillarGrid">
+      <button type="button" class="pillar" data-node><span class="pillar__dot"></span>Technology</button>
+      <button type="button" class="pillar" data-node><span class="pillar__dot"></span>Innovation</button>
+      <button type="button" class="pillar" data-node><span class="pillar__dot"></span>Continuous Learning</button>
+      <button type="button" class="pillar" data-node><span class="pillar__dot"></span>Problem Solving</button>
+      <button type="button" class="pillar" data-node><span class="pillar__dot"></span>Community Impact</button>
+      <button type="button" class="pillar" data-node><span class="pillar__dot"></span>Professional Growth</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OPPORTUNITIES ============ -->
+<section id="opportunities" class="opp">
+  <div class="opp__inner">
+    <div class="opp__head">
+      <p class="eyebrow reveal">What membership means</p>
+      <h2 class="section-title reveal">What You Get</h2>
+    </div>
+
+    <div class="opp__grid">
+      <article class="opp__card reveal">
+        <div class="opp__icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 4-8 4-8-4 8-4z"/><path d="M4 11v6c0 1.5 3.5 3 8 3s8-1.5 8-3v-6"/></svg>
+        </div>
+        <h3>Scholarships &amp; Programs</h3>
+        <p>Curated scholarship opportunities and training programs, shared as soon as they open — so you don't miss deadlines.</p>
+      </article>
+
+      <article class="opp__card reveal">
+        <div class="opp__icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5V6a2 2 0 012-2h12a2 2 0 012 2v13.5"/><path d="M4 19.5A2 2 0 006 21h12a2 2 0 002-1.5M8 7h8M8 11h8M8 15h5"/></svg>
+        </div>
+        <h3>Learning Resources</h3>
+        <p>Free courses, roadmaps, and tools that actually work — tested and shared by people already on the journey.</p>
+      </article>
+
+      <article class="opp__card reveal">
+        <div class="opp__icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/><path d="M19 9.5c1.3.4 2 1.3 2 2.5M17.5 5.2c1.2.3 2 1.4 2 2.8"/></svg>
+        </div>
+        <h3>Mentorship &amp; Guidance</h3>
+        <p>Direct access to guidance from people further along the path — no gatekeeping, just real answers.</p>
+      </article>
+
+      <article class="opp__card reveal">
+        <div class="opp__icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="7" r="2.4"/><circle cx="17" cy="7" r="2.4"/><circle cx="12" cy="17" r="2.4"/><path d="M7 9.4V12M17 9.4V12M9.2 15.4L11 13M14.8 15.4L13 13"/></svg>
+        </div>
+        <h3>Community Support</h3>
+        <p>A network of <span class="counter" data-target="175">0</span>+ learners to ask questions, share wins, and stay accountable with.</p>
+      </article>
+    </div>
+
+    <div class="opp__foot reveal">
+      <h3>Ready to grow with us?</h3>
+      <p>Join EP TECH Innovation today.</p>
+      <a href="https://whatsapp.com/channel/0029Vb7wtv5LdQeUi5zDGq3u" target="_blank" rel="noopener" class="btn btn--solid">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.1 9 9.6 7.8 9.4 7.3c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3s1 2.7 1.1 2.9c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 14.9 3.6 13.5 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8.2-8.4 8.2z"/></svg>
+        Join on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="contact">
+  <div class="contact__inner">
+    <div class="contact__body reveal">
+      <p class="eyebrow">Get in touch</p>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="contact__lead">
+        Have a question, a resource to share, or want to join the community?
+        Reach out — I read everything myself.
+      </p>
+
+      <div class="contact__links">
+        <a href="https://whatsapp.com/channel/0029Vb7wtv5LdQeUi5zDGq3u" target="_blank" rel="noopener" class="contact__link">
+          <span class="contact__link-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.1 9 9.6 7.8 9.4 7.3c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 .9-1 2.3s1 2.7 1.1 2.9c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 5L2 22l5.2-1.4c1.4.8 3.1 1.2 4.8 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3C4 14.9 3.6 13.5 3.6 12c0-4.6 3.8-8.4 8.4-8.4s8.4 3.8 8.4 8.4-3.8 8.2-8.4 8.2z"/></svg>
+          </span>
+          Join our WhatsApp Community
+          <svg class="contact__link-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+
+        <a href="mailto:eptech4u@gmail.com" class="contact__link">
+          <span class="contact__link-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          </span>
+          Email Us
+          <svg class="contact__link-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+
+        <a href="https://www.linkedin.com/in/ahundu-chukwuebuka-samuel-4u/" target="_blank" rel="noopener" class="contact__link">
+          <span class="contact__link-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.9 8.4H3.6V20H6.9V8.4zM5.3 3.2a1.9 1.9 0 100 3.8 1.9 1.9 0 000-3.8zM20.6 20h-3.3v-6c0-1.4 0-3.3-2-3.3s-2.3 1.6-2.3 3.2V20H9.7V8.4H13v1.6h.05c.45-.85 1.55-1.75 3.2-1.75 3.4 0 4.35 2.25 4.35 5.15V20z"/></svg>
+          </span>
+          Connect on LinkedIn
+          <svg class="contact__link-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact__letter reveal">
+      <h3>Sign up for our<br><span>Newsletter</span></h3>
+      <p class="contact__letter-sub">Occasional updates on scholarships, resources, and community news. No spam.</p>
+
+      <form class="contact__form" id="newsletterForm" novalidate>
+        <label class="field">
+          <span>Name</span>
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label class="field">
+          <span>Email</span>
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <button class="btn btn--solid btn--full" type="submit">
+          <span class="btn__label">Sign Up</span>
+        </button>
+        <p class="contact__form-note" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__body">
+      <h2>EP TECH <span class="nav__logospan">Innovation</span></h2>
+      <p class="footer__tagline">Learn. Build. Grow.</p>
+    </div>
+
+    <div class="footer__nav">
+      <h3>Quick Links</h3>
+      <p><a href="#home">Home</a></p>
+      <p><a href="#about">About</a></p>
+      <p><a href="#opportunities">Opportunities</a></p>
+      <p><a href="#contact">Contact</a></p>
+    </div>
+
+    <div class="footer__social">
+      <h3>Follow Us</h3>
+      <div class="footer__social-icons">
+        <a href="https://www.facebook.com/share/18o4J2wphu/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0022 12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ahundu-chukwuebuka-samuel-4u/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6.9 8.4H3.6V20H6.9V8.4zM5.3 3.2a1.9 1.9 0 100 3.8 1.9 1.9 0 000-3.8zM20.6 20h-3.3v-6c0-1.4 0-3.3-2-3.3s-2.3 1.6-2.3 3.2V20H9.7V8.4H13v1.6h.05c.45-.85 1.55-1.75 3.2-1.75 3.4 0 4.35 2.25 4.35 5.15V20z"/></svg>
+        </a>
+        <a href="https://github.com/EP-TECH4U" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2a10 10 0 00-3.16 19.5c.5.1.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 015 0c1.9-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg>
+        </a>
+        <a href="https://x.com/Prosperity55321" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M13.6 10.6L21 3h-2.2l-6.3 6.6L7.7 3H2l7.8 10.5L2.3 21h2.2l6.7-7 5.3 7H22l-8.4-10.4zM11 12.6l-.8-1-6.1-8h2.3l5 6.8.8 1 6.5 8.8H16l-5-6.6z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <p class="footer__close">&copy; <span id="year"></span> EP TECH Innovation. Built by Chukwuebuka Samuel.</p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
