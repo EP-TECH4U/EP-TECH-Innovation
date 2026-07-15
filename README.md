@@ -4,7 +4,8 @@
 
 The official landing page for **EP TECH Innovation** — a growing community of 175+ tech learners sharing resources, scholarships, and real guidance for people serious about building a career in tech.
 
-🔗 **Live site:** _add your deployed URL here_
+🔗 **Live site:** https://eptech-innovation.netlify.app/#home
+
 📱 **Join the community:** [WhatsApp](https://whatsapp.com/channel/0029Vb7wtv5LdQeUi5zDGq3u) · [Discord](https://discord.gg/gscFNUKcc)
 
 ---
@@ -72,10 +73,6 @@ The signup form in the Contact section is currently front-end only (validates in
 
 This is currently maintained by the EP TECH Innovation founder. If you're a community member and want to suggest changes or report a bug, open an issue or reach out directly via [WhatsApp](https://whatsapp.com/channel/0029Vb7wtv5LdQeUi5zDGq3u) or [LinkedIn](https://www.linkedin.com/in/ahundu-chukwuebuka-samuel-4u/).
 
-## License
 
-_Add a license here if you want the code to be open for reuse (e.g. MIT), or note that all rights are reserved._
-
----
 
 Built by **Ahundu Chukwuebuka Samuel** — Founder, EP TECH Innovation
